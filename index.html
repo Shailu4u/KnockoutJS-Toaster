@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KnockoutJS Toaster</title>
+    <link href="css/page.css" rel="stylesheet" />
+    <link href="css/toast.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid" style="text-align: center">
+            <h1>Knockout JS Toaster</h1>
+        </div>
+    </nav>
+
+    <!-- toast container custom element, add this to your index page / default template -->
+    <toast-container params='
+                     timeout: 3000,
+                     showClose: false,
+                     pushTo: "top",
+                     limit: 10,
+                     toasts: toaster.toasts'>   <!-- supply toasts from toaster to custom element must required -->
+    </toast-container>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div style="margin-left:auto;margin-right:auto;margin-top:100px;width:200px">
+                    <button class="btn btn-primary" data-bind="click:displayStandardToasts">Standard Toasts (timout 7sec)</button>
+                    <br /><br />
+                    <button class="btn btn-primary" data-bind="click:displayLoading">Loading Toasts</button>
+                    <br /><br />
+                    <button class="btn btn-primary" data-bind="click:displayLongToasts">Long Toasts (timout 25sec)</button>
+                    <br /><br />
+                    <button class="btn btn-info" data-bind="click:displayInfo">Info Toasts</button>
+                    <br /><br />
+                    <button class="btn btn-warning" data-bind="click:displayWarning">Warning Toasts</button>
+                    <br /><br />
+                    <button class="btn btn-danger" data-bind="click:displayError">Error Toasts</button>
+                    <br /><br />
+                    <button class="btn btn-success" data-bind="click:displaySuccess">Success Toasts</button>
+                    <br /><br />
+                    <button class="btn btn-default" data-bind="click:clear">Clear All Toasts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="src/toast.js"></script><!--Toaster plugin-->
+    <script src="src/toastVM.js"></script><!--This page view model-->
+</body>
+</html>
