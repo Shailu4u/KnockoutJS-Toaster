@@ -35,19 +35,19 @@
 }
 
 /* Positioning */
-.toast-top-left {
+.top-left {
   top: 12px;
   left: 12px;
 }
-.toast-top-right {
+.top-right {
   top: 12px;
   right: 12px;
 }
-.toast-bottom-right {
+.bottom-right {
   right: 12px;
   bottom: 12px;
 }
-.toast-bottom-left {
+.bottom-left {
   bottom: 12px;
   left: 12px;
 }

@@ -2,6 +2,18 @@
 (function () {
     "use strict";
 
+    /*
+     * KnockoutJS Toaster
+     * Version: 0.1.0
+     *
+     * Copyright 2015 Shailendra Kumar.
+     * All Rights Reserved.
+     * Use, reproduction, distribution, and modification of this code is subject to the terms and
+     * conditions of the MIT license, available at http://www.opensource.org/licenses/mit-license.php
+     *
+     * Author: Shailendra Kumar
+     */
+
     //List of constants/defaults used
     var defaultToastClasses = {/*default classes used for different toast types*/
         iconClasses: {
@@ -24,7 +36,7 @@
         'clickToClose': false, // enable disable click to close.
         'pushTo': 'top', // position where new toasties are pushed to, top or bottom.
         'timeout': 3000, // how long to show the toast for in ms, set to 0 for indefinite.
-        'position': 'toast-top-right'
+        'position': 'top-right'
     };
 
     //Toast component View Model is component View Model which contains params passed from custom element view
@@ -46,9 +58,8 @@
     ko.components.register("toast-container", {
         viewModel: ToastViewModel,
         template: '<div id="toast-container" data-bind="css:config.position">' +
-            //'<!-- ko template: { name: "toast-template", foreach: toasts, afterAdd: toastFadeIn} -->' +
             '<!-- ko  foreach: {data: toasts} -->' +
-            '<div class="toast toastKO" data-bind="css: type, fadeVisible: true, timeOut: timeout">' +  //,event: { click: $root.toast.tapRemove}
+            '<div class="toast toastKO" data-bind="css: type, fadeVisible: true, timeOut: timeout">' +
             '<button class="toast-close-button" data-bind="visible: showClose">&times;</button>' +
             '<!-- ko if: $data.hasOwnProperty("img") --> <div class="toast-image"><img data-bind="attr: { src: img }"/></div><!-- /ko -->' +
             '<div class="toast-text">' +
