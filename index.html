@@ -3,7 +3,7 @@
 <head>
     <title>KnockoutJS Toaster</title>
     <link href="css/page.css" rel="stylesheet" />
-    <link href="css/toast.css" rel="stylesheet" />
+    <link href="css/toaster.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -15,10 +15,10 @@
 
     <!-- toast container custom element, add this to your index page / default template -->
     <toast-container params='
-                     timeout: 3000,
+                     timeout: 4000,
                      showClose: false,
                      pushTo: "top",
-                     limit: 10,
+                     limit: 6,
                      toasts: toaster.toasts'>   <!-- supply toasts from toaster to custom element must required -->
     </toast-container>
 
@@ -47,7 +47,7 @@
     </div>
 
     <script src="lib/knockout-3.2.0.js"></script>
-    <script src="src/toast.js"></script><!--Toaster plugin-->
+    <script src="src/toaster.js"></script><!--Toaster plugin-->
     <script src="src/toastVM.js"></script><!--This page view model-->
 </body>
 </html>
