@@ -167,12 +167,12 @@
 
             if (toast['pushTo'] === 'top') {
                 self.toasts.unshift(toast);
-                if (toast['limit'] > 0 && self.toasts.length > toast['limit']) {
+                if (toast['limit'] > 0 && self.toasts().length > toast['limit']) {
                     self.toasts.pop();
                 }
             } else {
                 self.toasts.push(toast);
-                if (toast['limit'] > 0 && self.toasts.length > toast['limit']) {
+                if (toast['limit'] > 0 && self.toasts().length > toast['limit']) {
                     self.toasts.shift();
                 }
             }
