@@ -3,6 +3,9 @@
 
 ### Current Version 0.1.0
 
+## Demo
+* http://plnkr.co/edit/M7VVxt
+
 ## Getting started
 
 * Link scripts:
@@ -51,19 +54,19 @@
 
 ## Options
 
-| Key                       | Default         | Values             								     |  Description                                                                  |
-| --------------------------|:---------------:|-----------------------------------------------------:|------------------------------------------------------------------------------:|
-| limit                     | `10`            | Integer          						             | Limits maximum number of toasts displayed on page							 |
-| showClose		            | `true`  	      | Boolean												 | Show/hide close button in toast                              			     |
-| clickToClose              | `false`         | Boolean											     | Enable or Disable click to close                                              |
-| pushTo	                | `top`           | `top`, `bottom`  							         | Position where new toasts are pushed to, either top or bottom in array        |
-| timeout				    | `3000`          | Integer or `0`  							         | How long to show the toast for in ms, set to 0 for indefinite.          		 |
-| position					| `top-right`     | `top-right`, `top-left`, `bottom-right`,`bottom-left`| Position in the page where toasts are to be displayed 						 |
+| Key                       | Default         | Values             								     |  Description                                                                     |
+| --------------------------|:---------------:|------------------------------------------------------|----------------------------------------------------------------------------------|
+| limit                     | `10`            | Integer          						             | Limits maximum number of toasts displayed on page, set to 0 for unlimited toasts	|
+| showClose		            | `true`  	      | Boolean												 | Show/hide close button in toast                              			        |
+| clickToClose              | `false`         | Boolean											     | Enable or Disable click to close                                                 |
+| pushTo	                | `top`           | `top`, `bottom`  							         | Position where new toasts are pushed to, either top or bottom in array           |
+| timeout				    | `3000`          | Integer or `0`  							         | How long to show the toast for in ms, set to 0 for indefinite.          	        |
+| position					| `top-right`     | `top-right`, `top-left`, `bottom-right`,`bottom-left`| Position in the page where toasts are to be displayed 			    		 	|
 
 ## Other Options
 
 | Key/Method                |  Values       	                                  |  Description                                                                      |
-| --------------------------|----------------------------------------------------:|----------------------------------------------------------------------------------:|
+| --------------------------|:---------------------------------------------------:|:----------------------------------------------------------------------------------|
 | title                     | String                                              | Title to be displayed in the toast                                                |
 | msg		                | String											  | Toast message                                									  |
 | img        		        | String											  | Image url to be displayed in the toast                                            |
@@ -78,7 +81,6 @@
 This library relies on CSS3 transformations for animations.
 
 ### Known Issues
-- Not tested in IE7-IE9, Safari and Opera browsers
 - No callback on toast close in page view modal
 
 ### Future enhancements
