@@ -5,7 +5,11 @@
     "Shailendra Kumar"
   ],
   "description": "KnockoutJS Toaster is a simple toast notification library built on top of Knockout.js 3.2 components. It is easy to use, custom element, small size, independent module and extensible. Jquery is not required.",
-  "main": "toaster.js",
+  "main": [
+    "src/toaster.js",
+    "src/toastVM.js",
+    "css/toaster.css"
+  ],
   "keywords": [
     "KnockoutJS-Toaster",
     "toaster",
@@ -20,5 +24,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "knockout": ">3.2.0"
+  }
 }
