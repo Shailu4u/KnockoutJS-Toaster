@@ -1,6 +1,8 @@
 # KnockoutJS-Toaster
 **KnockoutJS Toaster** is a simple toast notification library built on top of Knockout.js 3.2 components. It is easy to use, custom element, small size, independent module and extensible. Jquery is not required.
 
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/Shailu4u/KnockoutJS-Toaster.svg)](https://beta.gemnasium.com/projects/github.com/Shailu4u/KnockoutJS-Toaster)
+
 ### Current Version 0.1.0
 
 ## Demo
